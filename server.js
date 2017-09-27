@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
  /* Allow Cross  Origin*/
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE"s);
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
