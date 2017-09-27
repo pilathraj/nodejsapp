@@ -41,6 +41,16 @@ exports.findById = function(req, res) {
     });
 };
 
+exports.findAllByTypeId = function(req, res) {
+    var typeId = req.params.typeid;
+    db.collection(CollectionName, function(err, collection) {
+        collection.find({type_id:typeId}).toArray(function(err, items) {
+            res.send(items);
+        });
+    });
+};
+
+
 exports.findAll = function(req, res) {
     db.collection(CollectionName, function(err, collection) {
         collection.find().toArray(function(err, items) {

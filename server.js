@@ -19,6 +19,7 @@ app.use(function(req, res, next) {
 
 app.get('/', forms.home);
 app.get('/forms', forms.findAll);
+app.get('/forms/type/:typeid', forms.findAllByTypeId);
 app.get('/forms/:id', forms.findById);
 app.post('/forms', forms.addForm);
 app.put('/forms/:id', forms.updateForm);
