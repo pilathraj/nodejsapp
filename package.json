@@ -1,0 +1,19 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "Node API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pilathraj@gmail.com",
+  "license": "MTC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
